@@ -4,10 +4,12 @@ function publishResult(){
     const computer=document.getElementById("computer").value;
     const programming=document.getElementById("programming").value;
     const chemistry=document.getElementById("chemistry").value;
+    const id=document.getElementById("id").value;
 
     let total= parseFloat(math) + parseFloat(physics) + parseFloat(computer) + parseFloat(programming) + parseFloat(chemistry);
     document.getElementById("sum").innerHTML="The Sum Is:" + total;
     let percentage=(total*100)/500;
+     document.getElementById("id").innerHTML="ID is :" + id;
     document.getElementById("percentage").innerHTML="The Percentage Is:" + percentage;
 
     if (percentage>=90) {
